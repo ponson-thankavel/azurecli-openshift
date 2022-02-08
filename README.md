@@ -1,4 +1,9 @@
-helm upgrade azurecli C:\Temp\azurecli --dry-run --debug --install --namespace fo-monitoring-ge --timeout 10m --set fullnameOverride=azurecli
-
-helm upgrade azurecli C:\Temp\azurecli --debug --install --namespace fo-monitoring-ge --timeout 10m --set fullnameOverride=azurecli
-
+# Dry Run #
+``
+helm upgrade azurecli <repo-directory>\azurecli-openshift --dry-run --debug --install --namespace azurecli-ns --timeout 10m --set fullnameOverride=azurecli
+``
+  
+# Deploy #
+``
+helm upgrade azurecli <repo-directory>\azurecli-openshift --debug --install --namespace azurecli-ns --timeout 10m --set fullnameOverride=azurecli
+``
